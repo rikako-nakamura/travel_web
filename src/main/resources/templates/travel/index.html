@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Travel</title>
+</head>
+<body>
+  <h1>旅程一覧</h1>
+
+  <form th:action="@{/create}" method="post">
+    <label>旅行先</label>
+    <input type="text" name="title" placeholder="長崎旅行"><br>
+    <lavel>出発日時</lavel>
+    <input type="datetime-local" name="date"><br>
+    <button>登録</button>
+  </form>
+</body>
+</html>
